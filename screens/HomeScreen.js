@@ -4,9 +4,9 @@ import {getImages} from '../api/pexels';
 
 const HomeScreen = () => {
 
-    const loadImages = () => {
+    const loadImages = async () => {
         const res = await getImages
-        console.log(res)
+        console.log(res.data)
     }
 
     useEffect(() => {
